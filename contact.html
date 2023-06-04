@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+		<link rel="stylesheet" href="stylesp.css"/>
+    <script language= "javascript">
+
+      function envoyer
+      (formulaire
+      )
+      
+      {
+      formulaire
+      .action
+      ="mailto:"+formulaire
+      .email
+      +"?subject= sujet du mail ici";
+      formulaire
+      .submit
+      ();
+      
+      }
+      
+</script>
+<style>
+  .p{
+    text-align: center;
+    font-family: Verdana;
+  }
+  .a{
+    text-align: center;
+  }
+  .dropbtn {
+    background-color: #f06306;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #c54f00;}
+  </style>
+</head>
+<html>
+<title>Portfolio Moreau Jean-Christophe</title>
+<body>
+  <h2>Informations Complémentaires</h2>
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="index.html">Accueil</a>
+      <a href="projet.html">Projet</a>
+      <a href="cv.html">Cv</a>
+      <a href="veille.html">Veille</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+<div>
+  
+<form method="post" id="formcontact" class="envoyer" enctype="text/plain">
+<p>Si Vous avez des remarques ou des suggestions, vous pouvez me contacter par e-mail <strong>jeanchristophe.moreau23@laposte.net</strong> ou bien ci-dessous</p>
+<a href="mailto:jeanchristophe.moreau23@laposte.net" class="btn btn-primary">&#x1F4E7</a>
+<p>ou par telephone au</p>
+<h2>07 80 30 80 15</h2>
+</form>
+</div>
+</body>
+</html>

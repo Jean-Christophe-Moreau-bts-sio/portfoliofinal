@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+		<link rel="stylesheet" href="stylesp.css"/>
+</head>
+<style>
+  .p{
+    text-align: center;
+    font-family: Verdana;
+  }
+  .b{
+    text-align: center;
+  }
+  .body{
+  background-color: rgb(216, 228, 231);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height:auto;
+  width: auto;
+  text-align: center;
+}
+.a{
+    text-align: center;
+  }
+  .b{
+      text-align: left;
+    }
+  .dropbtn {
+    background-color: #f06306;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  div#projets div.projetl{
+    width: 95% ; /*90% represente la surface occupé sur tout le conteneur*/
+    position: absolute;
+    right : 0px;
+    top: 155px;
+    bottom: 0px;
+    text-align: center;
+}
+div#projets div.projetr{
+  width: 70% ; /*represente la surface occupé sur tout le conteneur*/
+    position: absolute;
+    right : 0px;
+    top: 155px;
+    bottom: 0px;
+    text-align: center;
+}
+table,
+td {
+    border : 2px solid;
+    border-color: rgb(182, 88, 0);;
+    border-collapse : separate;
+    border-spacing : 10px;
+    width: 100%;
+}
+/*#projetpp{ 
+    display: inline-block;  
+    width: 25%;
+    height: 50%;
+    background-color: burlywood;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 60%;
+    margin-bottom: 0%;
+    border: 2px solid rgb(49, 48, 141);
+    text-align: center;
+}*/
+#projetgc{ 
+    display: inline-block;  
+    width: 25%;
+    height: 50%;
+    background-color: burlywood;
+    margin-top: -1%;
+    margin-left: 60%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    border: 2px solid rgb(49, 48, 141);
+    text-align: center;
+}
+#projetgsb{ 
+    display: flex;  
+    width: 29%;
+    height: 65%;
+    background-color: burlywood;
+    margin-top: 9%;
+    margin-left: 30%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    border: 2px solid rgb(49, 48, 141);
+    text-align: center;
+}
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #c54f00;}
+</style>
+<html>
+<title>Portfolio Moreau Jean-Christophe</title>
+<body>
+    <h1>Projets</h1>
+    <hr>
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="index.html">Accueil</a>
+      <a href="projet.html">Projet</a>
+      <a href="cv.html">Cv</a>
+      <a href="veille.html">Veille</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+<div> 
+</br></br>
+
+
+<div id="projets">
+<div class="projetl" table style="display: inline-block;">
+  <table>
+  <thead>
+      <tr>
+          <th colspan="2"><h1>Liste des projet vue en cours de formation</h1></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><h2>Projet Gestion des Clefs</h2>
+          </br><img src = "img/pp.png" alt= "Logo gestion des clefs" width="60" height="60" />
+        </br><b><strong><u>Consignes</u>: </strong></br>Le projet gestion des clefs a pour but pour l'etablissement Jamot-Jaurès
+            de pouvoir gérer toutes les clés disponibles, de savoir à qui ces clés ont été prétés 
+            et d'avoir une meilleure gestion (Auparavant sur fichier excel).</br>
+            <strong><u>Réalisation</u>: </strong></br>
+            Ce projet est composé de 3 statuts administrateur secrétaire et utilisateur.Penché sur l'administrateur dans ce projet 
+            c'est lui qui gère toutes les fonctionnalités de l'application, Gestions des bâtiments salles portes clefs etc...
+            Mais aussi l'administrateur gère l'attribution de clefs aux différents utilisateurs tout comme la secrétaire
+          </br></br>
+          <strong><u>Langages utilisées</u>: </strong></br>
+          -html</br>
+          -PHP</br>
+          -CSS</br>
+          -SQL</br>
+          -MCD</br>
+          -+ application methode MVC</br></br>
+          </b>
+        </td>
+      </tr>
+<tr>
+          <td><h2>Projet Galaxy Swiss Bourdin</h2>
+          </br><img src = "img/gsb.png" alt= "Logo gsb" width="60" height="60" />
+        </br><b><strong><u>Consignes</u>: </strong></br>Le suivi des frais est actuellement géré de plusieurs façons selon le laboratoire d'origine des visiteurs.
+            On souhaite uniformiser cette gestion
+            L'application doit permettre d'enregistrer tout frais engagé, aussi bien pour l'activité directe
+            (déplacement, restauration et hébergement) que pour les activités annexes (événementiel,
+            conférences, autres), et de présenter un suivi daté des opérations menées par le service comptable
+            (réception des pièces, validation de la demande de remboursement, mise en paiement,
+            remboursement effectué).</br>
+            <strong><u>Réalisation</u>: </strong></br>
+            Composé de 3 statuts l'administrateur est le rôle le plus important. Après connexion selon le statut choisi,l'administrateur peut gérer les comptes des comptables
+      et des clients avec les méthodes CRUD et aussi visualiser les actions du comptable.</br></br>
+      <strong><u>Langages utilisées</u>: </strong></br>
+      -html</br>
+      -PHP</br>
+      -CSS</br>
+      -SQL</br>
+      -MCD</br>
+      -+ application methode MVC</br>
+          </b></td>
+      </tr>
+  <tr>
+    <td><h2>Projet Gestion des Cultures</h2>
+    </br><img src = "img/gc.png" alt= "Logo gest_culture" width="60" height="60" />
+  </br><b><strong><u>Consignes</u>: </strong></br>Le projet gestion des cultures a pour finalité , de faciliter le travail des techniciens se rendant dans les exploitations, on souhaite mettre à leur disposition un
+      terminal mobile (téléphone) sur lequel est installé une application permettant la saisie des informations
+      collectées ainsi que l'envoi vers un serveur de ces informations.</br>
+      <strong><u>Réalisation</u>: </strong></br> 
+    Le technicien crée et enregistre des exploitations, même après fermeture de l'émulateur ou de l'application puisque ces données sont stockées dans une bdd 'DatabaseHelper'
+    Ces exploitations contiennent des parcelles avec le nom de l'exploitant avec ses coordonées ainsi que l'année d'exploitation , l'espèce cultivée etc...
+      </br></br>
+  <strong><u>Langages utilisées</u>: </strong></br>
+  -JavaScript</br>
+  -XML</br>
+    </b></td>
+  </tr>
+  <tr>
+    <td><h2>Projet oizo node javascrispt</h2>
+    </br><img src = "img/oizo.png" alt= "Logo oizo" width="120" height="60" />
+  </br><b><strong><u>Consignes</u>: </strong></br>Réalisation d'une application node.js grâce à nos connaissances vu en cours</br>
+      <strong><u>Réalisation</u>: </strong></br>
+      Le projet node.js comporter 4 fichiers dont les modules qui ont été installés nécessaires à l'utilisation de certains points.
+      À l'aide d'un fichier serveur.js et routeur.js par l'index.js on démarre l'application et un fichier gestion de requêtes.js permet de gérer correctement l'application et
+      l'affichage des pages contenant des images.
+    </br></br>
+    <strong><u>Langages utilisées</u>: </strong></br>
+    -html</br>
+    -nodeJS</br>
+    </b>
+  </td>
+  </tr>
+  <tr>
+    <td><h2>Projets en 1ère année de stage</h2>
+    </br><img src = "img/sign_elec.png" alt= "Logo gestion des clefs" width="60" height="60" />
+  </br><b><strong><u>Consignes</u>: </strong></br>Création d'un site intranet conportant plusieurs fonctionnalités</br>
+    <strong><u>Réalisation</u>: </strong></br>Durant les 6 semaines de stage, j'ai développé un site intranet à l'organisation du CH Le Mont dont deux applications/fonctionnalité.</br>
+    La première consiste à générer une signature electronique d'e-mail propre à chacun des acteurs du centre hospitalier sous un format definit, avec la 
+    présence du nom, prénom, e-mail, service, logo de l'organisation etc...</br>
+    Cette création de signature est stockée néanmoins dans la base de données et lors de l'ajout, une requête récupère ces dernières informations saisies
+    dans le format adaptée.</br>
+    Deuxièmement, des actualités pouvaient être crée par l'informaticienne du CH le Mont, Mme Seyrie. De plus, ces actualités était gérées par les méthodes CRUD
+    à l'exception du Retrieve (rechercher) qui n'a beaucoup d'importance puisque ces actualités sont à court terme.
+    Enfin, ces actualités s'afficheaient sur la page d'Accueil du site intranet crée durant mon stage.   
+  </br></br>
+  <strong><u>Langages utilisées</u>: </strong></br>
+  -html</br>
+  -PHP</br>
+  -CSS</br>
+  -SQL</br>
+  -MCD</br>
+    </b>
+  </td>
+  </tr>
+  <tr>
+    <td><h2>Projet quiz (Stage 2nd année)</h2>
+    </br><img src = "img/quiz.png" alt= "Logo quiz" width="60" height="60" />
+  </br><b><strong><u>Consignes</u>: </strong></br>Durant ma période de stage, mon cahier des charges consister à créer une interface de quiz + le déroulée du quiz intranet, gérée via une base de données.</br>
+    <strong><u>Réalisation</u>: </strong></br>Tout d'abord une interface administrateur a été créé pour gérer les quiz.L'administrateur crée un nom de quiz sur lequel il affecte des questions et sur ces questions
+     il affecte que des propositions ayant pour chacunes de ces réponses le statut vrai ou faux. Ensuite, à la page index accessible à tous le nom du quiz apparait avec un label de bouton radio.
+     Une fois le quiz choisis les questions et les différentes réponses apparaissent grâce aux différentes clés primaires et étrangères de chaque tables.Une fois le quiz terminé un calcul va s'effectuer 
+     sur le nombre de questions Et par rapport au nombre de pints obtenu de l'utilisateur qui permettra de déterminer son score.
+  </br></br>
+  <strong><u>Langages utilisées</u>: </strong></br>
+  -html</br>
+  -PHP</br>
+  -CSS</br>
+  -SQL</br>
+  -MCD</br>
+    </b>
+  </td>
+  </tr>
+  </tbody>
+</table>
+<!--
+<a href="detailspp.html">Voir plus de détails ci-dessous</a></td> 
+<a href="detailsgsb.html">Voir plus de détails en images ici</a></td> 
+ <a href="detailsgc.html">Voir plus de détails en images ici</a></td> 
+</div>
+</div>-->
+</body>
+</html>
